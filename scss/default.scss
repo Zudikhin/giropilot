@@ -53,3 +53,9 @@ button:focus {
 div:focus {
   outline: none;
 }
+
+body {
+  &.notouch {
+    touch-action: none;
+  }
+}
