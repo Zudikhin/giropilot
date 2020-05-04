@@ -30,6 +30,7 @@ $(document).ready(function () {
 
   $(".header__mobile-cart button").click(function () {
     $(".header__mobile-cart-content").toggleClass("active");
+    $("body").toggleClass("notouch");
     if ($(".header__mobile-cart-content").hasClass("active")) {
       $(".header__fake-modal").css("display", "block");
       $("body").css("overflow", "hidden");
@@ -42,6 +43,7 @@ $(document).ready(function () {
   $(".header__mobile-cart-content .cart__close").click(function () {
     $(".header__mobile-cart-content").removeClass("active");
     $(".header__fake-modal").css("display", "none");
+    $("body").removeClass("notouch");
     $("body").css("overflow", "auto");
   });
 });
