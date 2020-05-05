@@ -4,7 +4,6 @@ $(document).ready(function () {
   $(".header__mobile-btn").click(function () {
     $(".header__mobile-menu").toggleClass("active");
     $("body").toggleClass("notouch");
-    $("html").toggleClass("notouch");
     if ($(".header__mobile-menu").hasClass("active")) {
       $(".header__fake-modal").css("display", "block");
       $("body").css("overflow", "hidden");
@@ -17,7 +16,6 @@ $(document).ready(function () {
   $(".header__fake-modal").click(function () {
     $(this).css("display", "none");
     $("body").removeClass("notouch");
-    $("html").removeClass("notouch");
     $(".header__mobile-menu").removeClass("active");
     $("body").css("overflow", "auto");
     $(".header__mobile-cart-content").removeClass("active");

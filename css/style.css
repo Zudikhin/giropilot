@@ -383,12 +383,6 @@ div:focus {
   outline: none;
 }
 
-html.notouch {
-  overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
-}
-
 body.notouch {
   -ms-touch-action: none;
       touch-action: none;
