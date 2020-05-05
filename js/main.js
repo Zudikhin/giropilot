@@ -19,6 +19,8 @@ $(document).ready(function () {
     $(".header__mobile-menu").removeClass("active");
     $("body").css("overflow", "auto");
     $(".header__mobile-cart-content").removeClass("active");
+    $(".cart__modal__content").removeClass("active");
+    $(".open__modal_cart").removeClass("active");
   });
 
   $(".header__mobile-menu button").click(function () {
@@ -66,30 +68,35 @@ $(document).ready(function () {
 
   $(".quantity-arrow-minus").click(function () {
     var currentNum = $(this).siblings().first();
-    console.log(currentNum.val());
-    // if (currentNum.val() > 1) {
-    //   currentNum.val(+currentNum.val() - 1);
-    // }
-    // console.log(currentNum);
-    // console.log(currentNum.val());
+    if (currentNum.val() > 1) {
+      currentNum.val(+currentNum.val() - 1);
+    }
   });
 
   $(".quantity-arrow-plus").click(function () {
     var currentNum = $(this).siblings().first();
-    console.log(currentNum);
-
-    // currentNum.val(+currentNum + 1);
-    // console.log(currentNum);
-    // console.log(currentNum.val());
+    currentNum.val(+currentNum.val() + 1);
   });
 
-  // function quantityMinus() {
-  //   if (quantityNum.val() > 1) {
-  //     quantityNum.val(+quantityNum.val() - 1);
-  //   }
-  // }
+  $(".cart__modal__content .content .item .text .title").each(function () {
+    var defaultText = $(this)[0].innerHTML;
+    if (defaultText.length > 30) {
+      var shortText =
+        $.trim(defaultText).substring(0, 21).split(" ").slice(0, -1).join(" ") +
+        "...";
+      $(this).text(shortText);
+    }
+  });
 
-  // function quantityPlus() {
-  //   quantityNum.val(+quantityNum.val() + 1);
-  // }
+  $(".open__modal_cart").click(function () {
+    $(this).addClass("active");
+    $(".cart__modal__content").addClass("active");
+    $(".header__fake-modal").css("display", "block");
+  });
+
+  $(".registration__close").click(function () {
+    $(".open__modal_cart").removeClass("active");
+    $(".cart__modal__content").removeClass("active");
+    $(".header__fake-modal").css("display", "none");
+  });
 });
