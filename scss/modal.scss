@@ -39,6 +39,9 @@
           border: 1px solid #818a91;
           border-radius: 7px;
           margin-top: 10px;
+          @media (min-width: 992px) {
+            width: 70%;
+          }
         }
         & button {
           background-color: #4d4cfe;

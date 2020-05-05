@@ -55,9 +55,6 @@
                     <a href="#"><i class="fas fa-map-marker-alt"></i>Адрес</a>
                   </li>
                   <li>
-                    <a href="#"><i class="far fa-truck"></i>Отследить заказ</a>
-                  </li>
-                  <li>
                     <a href="#"><i class="far fa-shopping-bag"></i>Магазин</a>
                   </li>
                   <li>
@@ -71,11 +68,34 @@
       </div>
     </header>
 
-    <section class="info-mobile">
+    <div class="header__mobile-menu">
+      <button>
+        <i class="fal fa-times"></i>
+      </button>
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li>
+          <a href="#">Гироскутеры</a>
+          <ul class="submenu">
+            <li><a href="#">10.5 Дюймов</a></li>
+            <li><a href="#">10 Дюймов</a></li>
+            <li><a href="#">8 Дюймов</a></li>
+            <li><a href="#">6.5 Дюймов</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Сигвеи</a></li>
+        <li><a href="#">Моноколеса</a></li>
+        <li><a href="#">Электросамокаты</a></li>
+        <li><a href="#">Аксессуары</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <section class="info">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="info__content">
+            <div class="info__content-mobile">
               <ul>
                 <li><span class="butn">Город: Москва</span></li>
                 <li>
@@ -99,32 +119,139 @@
                 </li>
               </ul>
             </div>
+            <div class="info__content-desktop">
+              <div class="upper">
+                <div class="logo">
+                  <a href="/"><img src="img/logo-mob.png" alt="" /></a>
+                  <span>магазин электротранспорта</span>
+                </div>
+                <div class="support">
+                  <ul>
+                    <li>
+                      <span
+                        >Поддержка:
+                        <a href="tel:+74951492504">+7(495) 149-25-04</a></span
+                      >
+                    </li>
+                    <li>
+                      <span
+                        >Email:
+                        <a href="mailto:girotrand@yandex.ru"
+                          >girotrand@yandex.ru</a
+                        ></span
+                      >
+                    </li>
+                    <li><span>м.Аэропорт Ходынский бульвар д.4</span></li>
+                  </ul>
+                </div>
+                <button
+                  class="info__content-desktop-btn"
+                  data-toggle="modal"
+                  data-target="#telModal"
+                >
+                  Обратный звонок
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="header__mobile-menu">
-      <button>
-        <i class="fal fa-times"></i>
-      </button>
-      <ul>
-        <li><a href="#">Каталог</a></li>
-        <li>
-          <a href="#">Гироскутеры</a>
-          <ul class="submenu">
-            <li><a href="#">10.5 Дюймов</a></li>
-            <li><a href="#">10 Дюймов</a></li>
-            <li><a href="#">8 Дюймов</a></li>
-            <li><a href="#">6.5 Дюймов</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Сигвеи</a></li>
-        <li><a href="#">Моноколеса</a></li>
-        <li><a href="#">Электросамокаты</a></li>
-        <li><a href="#">Аксессуары</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+    <section class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="navigation__content">
+              <div class="category">
+                <span>Все категории</span>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="#">Каталог</a></li>
+                  <li>
+                    <a href="#"
+                      >Гироскутеры <i class="fas fa-chevron-right"></i
+                    ></a>
+                    <ul class="dropdown__menu">
+                      <li><a href="#">10.5 Дюймов</a></li>
+                      <li><a href="#">10 Дюймов</a></li>
+                      <li><a href="#">8 Дюймов</a></li>
+                      <li><a href="#">6.5 Дюймов</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Сигвеи</a></li>
+                  <li><a href="#">Моноколеса</a></li>
+                  <li><a href="#">Электросамокаты</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="form">
+                <form action="">
+                  <input type="text" placeholder="Поиск по товарам" />
+                  <button type="submit"><i class="far fa-search"></i></button>
+                </form>
+              </div>
+              <button class="navigation__content-cart">
+                <span>30,400 руб.</span>
+                <span class="navigation__content-cart-bag"
+                  ><i class="fal fa-shopping-bag"></i> <span>2</span></span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-slider">
+      <div class="main-slider-item">
+        <img src="img/slider/slide1.jpg" alt="" />
+      </div>
+      <div class="main-slider-item">
+        <img src="img/slider/slide2.jpg" alt="" />
+      </div>
+      <div class="main-slider-item">
+        <img src="img/slider/slide3.jpg" alt="" />
+      </div>
+      <div class="main-slider-item">
+        <img src="img/slider/slide4.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="advantage">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="advantage__content">
+              <ul>
+                <li>
+                  <span
+                    ><i class="fad fa-truck-moving"></i>Бесплатная доставка по
+                    Москве и Подмосковью</span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><i class="fad fa-city"></i> Сервисные центры в 30 городах
+                    России</span
+                  >
+                </li>
+                <li>
+                  <span><i class="fal fa-handshake"></i>Гарантия 2 года</span>
+                </li>
+                <li>
+                  <span
+                    ><i class="far fa-angle-double-right"></i>Доставка в день
+                    заказа</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <h1>
@@ -268,6 +395,131 @@
               <input type="tel" placeholder="Телефон" />
               <button type="submit">Отправить</button>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__search">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__search__content">
+              <div class="subscribe">
+                <span
+                  ><i class="fab fa-telegram-plane"></i>Подпишитесь на
+                  рассылку</span
+                >
+              </div>
+              <div class="coupon">
+                <span>...и получите <b>скидку на первую покупку</b></span>
+              </div>
+              <div class="form">
+                <form action="">
+                  <input type="text" placeholder="Введите Ваш Email" />
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__content">
+              <div class="logo">
+                <a href="/">
+                  <img src="img/footer/footer-logo.png" alt="" />
+                </a>
+              </div>
+              <div class="question">
+                <span>Есть вопросы? Звоните 24/7!</span>
+                <a href="tel:+74951492504">+7 (495) 149-25-04</a>
+              </div>
+              <div class="social">
+                <ul>
+                  <li class="instagram">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="whatsapp">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  </li>
+                  <li class="youtube">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Категории</h3>
+                <ul>
+                  <li><a href="#">Гироскутеры</a></li>
+                  <li><a href="#">Электросамокаты</a></li>
+                  <li><a href="#">Сигвеи</a></li>
+                  <li><a href="#">Моноколеса</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>© Giropilot - 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart__modal__content">
+      <h3>Корзина</h3>
+      <div class="content">
+        <div class="item">
+          <div class="img">
+            <a href="#">
+              <img src="img/products/1526107063.jpg" alt="" />
+            </a>
+          </div>
+          <div class="text">
+            <a class="title" href="#">Гироскутер с ручкой</a>
+            <div class="quantity">
+              <input class="quantity-num" type="number" value="1" />
+              <button class="quantity-arrow-minus">-</button>
+              <button class="quantity-arrow-plus">+</button>
+            </div>
+          </div>
+          <div class="cost">
+            <span>12,950 руб.</span>
+            <button>Remove</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <a href="#">
+              <img src="img/products/samokat.jpg" alt="" />
+            </a>
+          </div>
+          <div class="text">
+            <a class="title" href="#"
+              >Электросамокат XIAOMI MI M365 PRO ELECTRIC SCOOTER белый</a
+            >
+            <div class="quantity">
+              <input class="quantity-num" type="number" value="1" />
+              <button class="quantity-arrow-minus">-</button>
+              <button class="quantity-arrow-plus">+</button>
+            </div>
+          </div>
+          <div class="cost">
+            <span>17,450 руб.</span>
+            <button>Remove</button>
           </div>
         </div>
       </div>

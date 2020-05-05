@@ -1,0 +1,11 @@
+.main-slider {
+  margin-top: 10px;
+  @media (min-width: 768px) {
+    margin-top: 0px;
+  }
+  &-item {
+    & img {
+      width: 100%;
+    }
+  }
+}
