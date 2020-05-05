@@ -57,5 +57,6 @@ div:focus {
 body {
   &.notouch {
     touch-action: none;
+    position: relative;
   }
 }

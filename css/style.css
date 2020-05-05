@@ -386,6 +386,7 @@ div:focus {
 body.notouch {
   -ms-touch-action: none;
       touch-action: none;
+  position: relative;
 }
 
 .header {
