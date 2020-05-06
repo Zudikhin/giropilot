@@ -1,0 +1,15 @@
+.banner {
+  margin-top: 50px;
+  &__img {
+    & img {
+      width: 100%;
+    }
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      & img {
+        width: auto;
+      }
+    }
+  }
+}
