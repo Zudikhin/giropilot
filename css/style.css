@@ -515,8 +515,8 @@ body.notouch {
 .header__mobile-menu ul li .submenu li:before {
   content: "";
   position: absolute;
-  left: -15px;
-  top: 0;
+  left: -17px;
+  top: 4px;
   width: 10px;
   height: 1px;
   background-color: black;
@@ -600,7 +600,7 @@ body.notouch {
   content: "";
   position: absolute;
   background-color: red;
-  left: -3px;
+  left: -4px;
   top: 0px;
   width: 12px;
   height: 12px;
@@ -1397,6 +1397,42 @@ body.notouch {
   height: 14px;
   z-index: -1;
   border-radius: 50%;
+}
+
+.navigation__content-other {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navigation__content-other .form {
+  margin-right: 66px;
+}
+
+@media (min-width: 992px) {
+  .navigation__content-other .form {
+    margin-right: 88px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation__content-other .form {
+    margin-right: 176px;
+  }
+}
+
+.nav__other .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__other .content ul li a {
+  font-size: 14px;
+  color: black;
 }
 
 @-webkit-keyframes opacityAnimate {

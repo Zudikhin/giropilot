@@ -136,3 +136,34 @@
     }
   }
 }
+.navigation__content-other {
+  justify-content: flex-end;
+  & .form {
+    margin-right: 66px;
+  }
+  @media (min-width: 992px) {
+    & .form {
+      margin-right: 88px;
+    }
+  }
+  @media (min-width: 1200px) {
+    & .form {
+      margin-right: 176px;
+    }
+  }
+}
+
+.nav__other {
+  & .content {
+    & ul {
+      display: flex;
+      justify-content: center;
+      & li {
+        & a {
+          font-size: 14px;
+          color: black;
+        }
+      }
+    }
+  }
+}
