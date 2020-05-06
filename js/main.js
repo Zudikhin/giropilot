@@ -99,4 +99,11 @@ $(document).ready(function () {
     $(".cart__modal__content").removeClass("active");
     $(".header__fake-modal").css("display", "none");
   });
+
+  $(".tabs__list").on("click", "li:not(.active)", function () {
+    $(this).addClass("active").siblings().removeClass("active");
+    var numberAttr = $(this).attr("data-tab");
+    $(".tabs-content").removeClass("active");
+    $(".tabs-content[data-tab='" + numberAttr + "']").addClass("active");
+  });
 });
