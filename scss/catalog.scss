@@ -86,13 +86,15 @@
       flex-wrap: wrap;
       & li {
         margin-top: 0px;
-        @media (min-width: 1200px) {
+        line-height: 6px;
+        @media (min-width: 992px) {
           margin-top: 5px;
+          line-height: 16px;
         }
       }
       & a {
         color: #878787;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
         margin-right: 5px;
         @media (min-width: 992px) {
@@ -102,6 +104,7 @@
     }
     &-title {
       height: 65px;
+      margin-top: 5px;
       @media (min-width: 992px) {
         margin-top: 10px;
       }

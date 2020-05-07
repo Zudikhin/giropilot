@@ -140,7 +140,7 @@ $(document).ready(function () {
         {
           breakpoint: 640,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 5,
             slidesToScroll: 4,
           },
         },
@@ -167,5 +167,10 @@ $(document).ready(function () {
     var goToSingleSlide = $(this).data("slick-index");
 
     $(".slider-single").slick("slickGoTo", goToSingleSlide);
+  });
+
+  $(".dropdown__btn").click(function () {
+    $(this).toggleClass("active");
+    $(".dropdown").toggleClass("active");
   });
 });
