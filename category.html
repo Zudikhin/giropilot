@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header__mobile">
+              <button class="header__mobile-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="header__mobile-logo">
+                <a href="#">
+                  <img src="img/logo-mob.png" alt="" />
+                </a>
+                <p>магазин электротранспорта</p>
+              </div>
+              <div class="header__mobile-tel">
+                <button data-toggle="modal" data-target="#telModal">
+                  <i class="fas fa-phone-alt"></i>
+                </button>
+              </div>
+              <div class="header__mobile-cart">
+                <button>
+                  <i class="far fa-shopping-cart"></i>
+                  <span>2</span>
+                </button>
+              </div>
+            </div>
+            <div class="header__desktop">
+              <div class="choice">
+                <button>Добро пожаловать<b> Giropilot Москва</b></button>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Адрес</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="far fa-shopping-bag"></i>Магазин</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fal fa-user"></i>Мой аккаунт</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header__mobile-menu">
+      <button>
+        <i class="fal fa-times"></i>
+      </button>
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li>
+          <a href="#">Гироскутеры</a>
+          <ul class="submenu">
+            <li><a href="#">10.5 Дюймов</a></li>
+            <li><a href="#">10 Дюймов</a></li>
+            <li><a href="#">8 Дюймов</a></li>
+            <li><a href="#">6.5 Дюймов</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Сигвеи</a></li>
+        <li><a href="#">Моноколеса</a></li>
+        <li><a href="#">Электросамокаты</a></li>
+        <li><a href="#">Аксессуары</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <section class="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="info__content-mobile">
+              <ul>
+                <li><span class="butn">Город: Москва</span></li>
+                <li>
+                  <span
+                    ><a href="tel:+74951492504"
+                      ><i class="fas fa-phone-alt"></i>+7 (495) 149 25 04</a
+                    ></span
+                  >
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <span
+                    ><i class="fas fa-map-marker-alt"></i>м. Аэропорт Ходынский
+                    б-р, д.4</span
+                  >
+                </li>
+                <li>
+                  <span><i class="fal fa-clock"></i>Пн-Вс: 9:00 - 22:00</span>
+                </li>
+              </ul>
+            </div>
+            <div class="info__content-desktop">
+              <div class="upper">
+                <div class="logo">
+                  <a href="/"><img src="img/logo-mob.png" alt="" /></a>
+                  <span>магазин электротранспорта</span>
+                </div>
+                <div class="support">
+                  <ul>
+                    <li>
+                      <span
+                        >Поддержка:
+                        <a href="tel:+74951492504">+7(495) 149-25-04</a></span
+                      >
+                    </li>
+                    <li>
+                      <span
+                        >Email:
+                        <a href="mailto:girotrand@yandex.ru"
+                          >girotrand@yandex.ru</a
+                        ></span
+                      >
+                    </li>
+                    <li><span>м.Аэропорт Ходынский бульвар д.4</span></li>
+                  </ul>
+                </div>
+                <button
+                  class="info__content-desktop-btn"
+                  data-toggle="modal"
+                  data-target="#telModal"
+                >
+                  Обратный звонок
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="nav__other">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li>
+                  <a href="#">Гироскутеры <i class="fas fa-caret-down"></i></a>
+                  <ul class="nav__other-submenu">
+                    <li><a href="#">10.5 Дюймов</a></li>
+                    <li><a href="#">10 Дюймов</a></li>
+                    <li><a href="#">8 Дюймов</a></li>
+                    <li><a href="#">6.5 Дюймов</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Сигвеи</a></li>
+                <li><a href="#">Моноколеса</a></li>
+                <li><a href="#">Электросамокаты</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="navigation__content navigation__content-other">
+              <div class="form">
+                <form action="">
+                  <input type="text" placeholder="Поиск по товарам" />
+                  <button type="submit"><i class="far fa-search"></i></button>
+                </form>
+              </div>
+              <button class="navigation__content-cart">
+                <span>30,400 руб.</span>
+                <span class="navigation__content-cart-bag"
+                  ><i class="fal fa-shopping-bag"></i> <span>2</span></span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="header__mobile-cart-content">
+      <button class="cart__close">
+        <i class="fal fa-times"></i>
+      </button>
+      <div class="content">
+        <div class="item">
+          <div class="img">
+            <a href="#">
+              <img src="img/products/1526107063.jpg" alt="" />
+            </a>
+          </div>
+          <div class="text">
+            <div class="name">
+              <a href="#">Гироскутер с ручкой</a>
+            </div>
+            <div class="quantity">
+              <p>1 x <span>12,950 руб.</span></p>
+            </div>
+          </div>
+          <div class="remove">
+            <button><i class="fal fa-times"></i></button>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+            <a href="#">
+              <img src="img/products/samokat.jpg" alt="" />
+            </a>
+          </div>
+          <div class="text">
+            <div class="name">
+              <a href="#"
+                >Электросамокат XIAOMI MI M365 PRO ELECTRIC SCOOTER белый</a
+              >
+            </div>
+            <div class="quantity">
+              <p>1 x <span>17,450 руб.</span></p>
+            </div>
+          </div>
+          <div class="remove">
+            <button><i class="fal fa-times"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="sum">
+        <strong>Подытог: 30,400 руб.</strong>
+      </div>
+      <div class="btns">
+        <a href="#">Просмотр корзины</a>
+        <a href="#">Оформление заказа</a>
+      </div>
+    </div>
+
+    <div class="banner-category-mob">
+      <img src="img/category/banner5.jpg" alt="" />
+    </div>
+
+    <div class="banner-category-desk">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="img">
+              <img src="img/category/banner5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="category">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 aside">
+            <div class="aside__content">
+              <div class="aside__content-list">
+                <ul>
+                  <li>
+                    <span class="dropdown__btn"
+                      >Все категории <i class="far fa-chevron-down"></i
+                    ></span>
+                    <ul class="dropdown submenu">
+                      <li>
+                        <a href="#">Аксессуары <span>(9)</span></a>
+                      </li>
+                      <li>
+                        <a href="#">Без категории <span>(1)</span></a>
+                      </li>
+                      <li>
+                        <a href="#">Гироскутеры <span>(50)</span></a>
+                      </li>
+                      <li>
+                        <a href="#">Сигвеи <span>(12)</span></a>
+                      </li>
+                      <li>
+                        <a href="#">Электросамокаты <span>(14)</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#">Электросамокаты <span>(14)</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="aside__new-products">
+                <div class="title">
+                  <h2>Новая продукция</h2>
+                </div>
+                <div class="content">
+                  <div class="item">
+                    <div class="img">
+                      <a href="#">
+                        <img src="img/accessories/1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="text">
+                      <h3><a href="#">Комплект защиты от 9 до 97 лет</a></h3>
+                      <span>750 руб.</span>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="img">
+                      <a href="#">
+                        <img src="img/accessories/2.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="text">
+                      <h3><a href="#">Комплект защиты от 9 до 97 лет</a></h3>
+                      <span>750 руб.</span>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="img">
+                      <a href="#">
+                        <img src="img/accessories/3.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="text">
+                      <h3>
+                        <a href="#"
+                          >Комплект защиты со шлемом от 4 до 9 лет(Красный)</a
+                        >
+                      </h3>
+                      <span>650 руб.</span>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="img">
+                      <a href="#">
+                        <img src="img/accessories/4.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="text">
+                      <h3>
+                        <a href="#"
+                          >Комплект защиты со шлемом от 4 до 9 лет(Красный)</a
+                        >
+                      </h3>
+                      <span>650 руб.</span>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="img">
+                      <a href="#">
+                        <img src="img/accessories/5.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="text">
+                      <h3>
+                        <a href="#"
+                          >Ручка руль для сигвея (Xiaomi , Mini robot и др)</a
+                        >
+                      </h3>
+                      <span>2,500 руб.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8 category__info">
+            <div class="title">
+              <h1>Электросамокаты</h1>
+            </div>
+            <div class="form">
+              <form class="" method="get">
+                <select
+                  name="orderby"
+                  class="orderby"
+                  aria-label="Заказ в магазине"
+                >
+                  <option value="popularity">По популярности</option>
+                  <option value="date" selected="selected"
+                    >Сортировка по более позднему</option
+                  >
+                  <option value="price">Цены: по возрастанию</option>
+                  <option value="price-desc">Цены: по убыванию</option>
+                </select>
+                <i class="fad fa-sort-up"></i>
+              </form>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"
+                      ><h2>Электросамокат Kuqoo S3+сумка в Подарок</h2></a
+                    >
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/1.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>50 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"
+                      ><h2>Электросамокат Kuqoo S3+сумка в Подарок</h2></a
+                    >
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/2.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>77 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"
+                      ><h2>Электросамокат Kuqoo S3+сумка в Подарок</h2></a
+                    >
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/3.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>77 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"><h2>ЭЛЕКТРОСАМОКАТ Kuqoo F3 PRO</h2></a>
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/4.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>16,450 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"><h2>Электросамокат Kuqoo S3 Pro</h2></a>
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/5.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>18,450 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"
+                      ><h2>
+                        Электросамокат ZAXBOARD ES-8 Белый (Влагозащита)
+                      </h2></a
+                    >
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/6.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>26,990 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"
+                      ><h2>
+                        Электросамокат XIAOMI MI M365 PRO ELECTRIC SCOOTER белый
+                      </h2></a
+                    >
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/7.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>17,450 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"
+                      ><h2>
+                        Электросамокат XIAOMI MI M365 PRO ELECTRIC SCOOTER
+                        черный
+                      </h2></a
+                    >
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/8.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>17,450 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"
+                      ><h2>Электросамокат Kuqoo M4 (Куго М4 с сиденьем)</h2></a
+                    >
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/9.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>77 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"><h2>Электросамокат Kuqoo M4 PRO 16.6 Ah</h2></a>
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/10.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>77 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"><h2>Электросамокат Kuqoo M5</h2></a>
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/11.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>43,000 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"><h2>Kuqoo M4 PRO 18 Ah</h2></a>
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/12.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>77 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"><h2>Электросамокат MiniPro mi158</h2></a>
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/13.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>23,900 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="catalog__item">
+                  <ul class="catalog__item-categories">
+                    <li><a href="#">Электросамокаты</a></li>
+                  </ul>
+                  <div class="catalog__item-title">
+                    <a href="#"><h2>Электросамокат MiniPro mi 618</h2></a>
+                  </div>
+                  <div class="catalog__item-img">
+                    <a href="#">
+                      <img src="img/category/14.jpg" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="catalog__item-sale">
+                    <span>38,500 руб.</span>
+                    <button class="add__to_cart">
+                      <span>В корзину</span>
+                      <i class="far fa-cart-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__description-text">
+              <div class="title">
+                <h2>Описание</h2>
+              </div>
+              <p>
+                Электрический самокат – индивидуальное транспортное средство,
+                которое используется для быстрого и беспрепятственного
+                перемещения по городским улицам, скверам и паркам, грунтовым
+                дорогам. Кроме того, эти приспособления подходят для выполнения
+                самых разнообразных трюков.
+              </p>
+              <p>
+                Предлагаем выгодно приобрести качественный самокат с
+                электрическим приводом по оптимальной цене. В нашем
+                интернет-магазине электросамокатов в Москве представлены
+                различные модели соответствующих технических приспособлений:
+                Куга, xiaomi 365 b 365 pro, Minipro, Zaxboard, Yamato, Halten,
+                Minirobot, Ibalance, E-scooter, Yokamura, Dualtron, Joyor,
+                Ninebot, Razor. Все самокаты сертифицированы и отвечают
+                существующим стандартам безопасности.
+              </p>
+              <p>
+                Общие характеристики и преимущества устройств
+              </p>
+              <p>
+                Предлагая приобрести электросамокат в Москве недорого, мы
+                гарантируем надёжность и практичность своих товаров. Каждое
+                транспортное средство оборудовано двумя колёсами и мотором,
+                обеспечивающим самостоятельное движение. Такие приспособления
+                способны развивать достаточно высокую скорость. Благодаря этому
+                они так популярны среди студентов и работающих людей. При этом
+                управлять самокатом с электроприводом можно без специальных
+                разрешительных документов. Поэтому у нас свободно реализуются
+                удобные и надёжные детские электросамокаты. Купить на день
+                рождения в подарок такой транспорт можно по самой низкой цене.
+              </p>
+              <p>
+                Стоит отметить, что самокат с мотором отличается следующими
+                важными преимуществами:
+              </p>
+              <p>– экономит деньги, поскольку не нуждается в топливе.</p>
+              <p>– позволяет перемещаться по тротуарам;</p>
+              <p>
+                – не загрязняет атмосферу выхлопными газами, является
+                экологически безопасным видом транспорта;
+              </p>
+              <p>
+                – обладает сравнительно небольшим весом, легко складывается,
+                имеет компактные габариты. Благодаря указанным параметрам такой
+                самокат можно перевозить в общественном транспорте и хранить
+                непосредственно в квартире.
+              </p>
+              <p>
+                Задаваясь вопросом: «Какой лучше купить хороший
+                электросамокат?», стоит подумать о комфорте. В зависимости от
+                модификации, самокаты могут оборудоваться специальными
+                сидениями. Это повышает практичность и удобство эксплуатации
+                устройств.
+              </p>
+              <p>
+                Мы предлагаем своим потребителям недорого купить электросамокат
+                взрослый с сиденьем. Цена такого транспортного средства зависит
+                от бренда, технических характеристик и функциональных
+                возможностей.
+              </p>
+              <p>Особенности электрических самокатов для детей</p>
+              <p>
+                У нас есть много модификаций детских электросамокатов. Купите на
+                день рождения в подарок красивое и удобное средство передвижения
+                для своего ребёнка. Такой транспорт оборудован платформой для
+                ног, рулевой стойкой, двумя либо тремя колёсами.
+                Электродвигатель помещён в специальный защитный корпус.
+                Аккумулятор расположен в нижней части рулевой стойки. Рычаг газа
+                находится на руле. Тормоз может быть ручным либо ножным.
+              </p>
+              <p>
+                В нашем магазине электросамокатов продаются только качественные
+                детские модели. Безопасность из эксплуатации обеспечивается
+                следующими характеристиками:
+              </p>
+              <p>
+                – устройства выполнены из прочных гипоаллергенных материалов;
+              </p>
+              <p>
+                – на платформе присутствует нескользящее покрытие, на руле –
+                удобные накладки;
+              </p>
+              <p>
+                – скорость набирается плавно, без рывков. Её максимальные
+                показатели – 10-15 километров в час.
+              </p>
+              <p>Электросамокат для детей: как выбрать?</p>
+              <p>
+                В нашем магазине электросамокатов представлен широкий
+                ассортимент детских моделей соответствующих устройств. При
+                выборе транспорта для ребёнка рекомендуем учитывать следующие
+                обстоятельства
+              </p>
+              <p>
+                – возраст и рост малыша. Грузоподъёмность самокатов не превышает
+                55 килограмм. Телескопическая рулевая колонка может
+                подстраиваться под рост 120-150 сантиметров;
+              </p>
+              <p>
+                – тип приспособления (складное, обычное). Можно купить
+                электросамокат s3 – дешевый и практичный агрегат. Может
+                складываться либо фиксироваться с помощью специальной подножки;
+              </p>
+              <p>
+                – ёмкость аккумуляторной батареи. От этого зависит
+                продолжительность работы электродвигателя без подзарядки;
+              </p>
+              <p>
+                – дизайн. Мы предлагаем большой выбор расцветок. Некоторые
+                самокаты оборудованы светодиодной подсветкой.
+              </p>
+              <p>
+                Также у нас можно приобрести детские модели с сиденьем, которое
+                легко снимается в случае необходимости. Покупайте качественные и
+                красивые электросамокаты для детей. Как выбрать оптимальный
+                вариант транспортного средства, знают наши сотрудники.
+                Проконсультируйтесь с опытными и грамотными специалистами, чтобы
+                сделать своему ребёнку отличный подарок.
+              </p>
+              <p>Какой лучше купить хороший электросамокат для взрослых?</p>
+              <p>
+                Предлагаем электросамокат kugoo (Куга) купить в Москве по
+                наиболее доступной стоимости. Также мы реализуем иные марки
+                соответствующих средств передвижения. При выборе самоката с
+                электрическим приводом стоит обращать внимание на такие факторы:
+              </p>
+              <p>
+                – запас хода. Если приспособление будет использоваться для
+                поездок на учёбу либо работу, следует учитывать показатели
+                ёмкости аккумулятора;
+              </p>
+              <p>
+                – тип электродвигателя. Лучше приобретать самокат с цепным
+                приводом;
+              </p>
+              <p>
+                – наличие сидения. Для преодоления достаточно больших расстояний
+                лучше покупать устройства, предусматривающие возможность поездок
+                в сидячем положении. У нас можно купить электросамокат взрослый
+                с сиденьем. Цены на такие устройства удовлетворяют потребности
+                среднестатистических покупателей;
+              </p>
+              <p>
+                – наличие дополнительных аксессуаров. Для поездок в ночное время
+                стоит приобретать модель с фарами, звуковой сигнализацией и
+                габаритными огнями;
+              </p>
+              <p>
+                – материал рамы. Стальные рамы отличаются повышенной прочностью
+                и долговечностью. Алюминиевые конструктивные элементы
+                изнашиваются гораздо быстрее.
+              </p>
+              <p>
+                Имеют значение характеристики колёс и шин. Наш интернет-магазин
+                электросамокатов в Москве реализует устройства с пневматическими
+                и жёсткими колёсами. Они различаются по следующим параметрам:
+              </p>
+              <p>
+                – диаметр жёстких колёс составляет 6 дюймов. Они выполнены из
+                пластмассовой вставки, на которую одеты резиновые шины;
+              </p>
+              <p>
+                – диаметр пневматических колёс составляет 10 дюймов. Изготовлены
+                такие конструктивные элементы из стального либо алюминиевого
+                обода и резиновой шины. Внутри имеется специальная камера.
+              </p>
+              <p>
+                Приобретайте комфортабельные и безопасные самокаты, работающие
+                на аккумуляторах. Это удобно, дёшево и практично!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="header__fake-modal"></div>
+
+    <div
+      class="modal fade"
+      id="telModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+          <div class="modal-body">
+            <h2>Обратная связь</h2>
+            <p>Отправьте нам свою заявку что бы мы могли связаться с вами</p>
+            <form action="#">
+              <input type="text" placeholder="Имя" />
+              <input type="tel" placeholder="Телефон" />
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__search">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__search__content">
+              <div class="subscribe">
+                <span
+                  ><i class="fab fa-telegram-plane"></i>Подпишитесь на
+                  рассылку</span
+                >
+              </div>
+              <div class="coupon">
+                <span>...и получите <b>скидку на первую покупку</b></span>
+              </div>
+              <div class="form">
+                <form action="">
+                  <input type="text" placeholder="Введите Ваш Email" />
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__content">
+              <div class="logo">
+                <a href="/">
+                  <img src="img/footer/footer-logo.png" alt="" />
+                </a>
+              </div>
+              <div class="question">
+                <span>Есть вопросы? Звоните 24/7!</span>
+                <a href="tel:+74951492504">+7 (495) 149-25-04</a>
+              </div>
+              <div class="social">
+                <ul>
+                  <li class="instagram">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="whatsapp">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  </li>
+                  <li class="youtube">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Категории</h3>
+                <ul>
+                  <li><a href="#">Гироскутеры</a></li>
+                  <li><a href="#">Электросамокаты</a></li>
+                  <li><a href="#">Сигвеи</a></li>
+                  <li><a href="#">Моноколеса</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>© Giropilot - 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="open__modal_cart">
+      <span>2</span>
+      <i class="fal fa-cart-plus"></i>
+    </button>
+
+    <div class="cart__modal__content">
+      <h3>Корзина</h3>
+      <div class="content">
+        <div class="item">
+          <div class="img">
+            <a href="#">
+              <img src="img/products/1526107063.jpg" alt="" />
+            </a>
+          </div>
+          <div class="text">
+            <a class="title" href="#">Гироскутер с ручкой</a>
+            <div class="quantity">
+              <input class="quantity-num" type="number" value="1" />
+              <button class="quantity-arrow-minus">-</button>
+              <button class="quantity-arrow-plus">+</button>
+            </div>
+          </div>
+          <div class="cost">
+            <span>12,950 руб.</span>
+            <button>Remove</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <a href="#">
+              <img src="img/products/samokat.jpg" alt="" />
+            </a>
+          </div>
+          <div class="text">
+            <a class="title" href="#"
+              >Электросамокат XIAOMI MI M365 PRO ELECTRIC SCOOTER белый</a
+            >
+            <div class="quantity">
+              <input class="quantity-num" type="number" value="1" />
+              <button class="quantity-arrow-minus">-</button>
+              <button class="quantity-arrow-plus">+</button>
+            </div>
+          </div>
+          <div class="cost">
+            <span>17,450 руб.</span>
+            <button>Remove</button>
+          </div>
+        </div>
+      </div>
+      <div class="registration">
+        <a href="#" class="registration__btn">
+          Оформление заказа - 30,400 руб.
+        </a>
+        <button class="registration__close">
+          <i class="far fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
